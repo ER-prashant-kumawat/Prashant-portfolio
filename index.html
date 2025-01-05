@@ -12,9 +12,7 @@
     <header>
         <div class="nav">
             <h1><span>PK</span> Code_Sutra</h1>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <nav>
                 <ul id="nav-ul">
                     <li><a href="index.html">Home</a></li>
@@ -23,14 +21,6 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="experience.html">Experience</a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
                 </ul>
             </nav>
         </div>
@@ -51,10 +41,6 @@
                 <a href="https://www.hackerrank.com/profile/prashantkumawat4" target="_blank"><i class="fab fa-hackerrank"></i></a>
                 <a href="https://www.linkedin.com/in/theprashant-kumawat-bba8aa267/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ER-prashant-kumawat" target="_blank"><i class="fab fa-github"></i></a>
-                <br>
-                <br>
-                <br>
-
             </div>
             <a href="https://drive.google.com/file/d/1u-QFXwc5mXP-_hpVIPaC4kNRT3-ic-FJ/view?usp=sharing" class="cv-btn" download>Download CV</a>
         </div>
@@ -65,14 +51,14 @@
         <p>© 2024 [ PRASHANT KUMAWAT ]. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-        // JavaScript to handle the menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navUl = document.getElementById('nav-ul');
-
-        menuToggle.addEventListener('click', () => {
-            navUl.classList.toggle('active');
-        });
+        function toggleMenu() {
+            const navMenu = document.querySelector('#nav-ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
