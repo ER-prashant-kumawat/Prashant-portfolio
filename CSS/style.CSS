@@ -71,7 +71,7 @@ header ul {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 333px) {
     header ul {
         flex-direction: column;
         display: none;
